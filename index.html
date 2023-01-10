@@ -3,31 +3,104 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página web</title>
-    <link rel="stylesheet" href="estilos.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Group - Pet</title>
+  <!-- ESTILO CSS -->
+  <link rel="stylesheet" href="/assets/estilos.css">
+  <!-- ICONOS PARA LA PAGINA -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+  <!-- IMPLEMENTAMOS BOOSTRAP  -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ"
+    crossorigin="anonymous"></script>
 </head>
 
 <body> 
 
     <header class="header" id="inicio">
-        <img class="hamburguer" src="img/hamburguesa.svg" alt="">
-        <nav class="menu-navegacion">
-            <a href="#inicio">Inicio</a>
-            <a href="#servicio">Servicio</a>
-            <a href="#galeria">Portafolio</a>
-            <a href="#expertos">Especializados</a>
-            <a href="#footer">Contacto</a>
-        </nav>
-        <div class="contenedor head">
-            <h1 class="titulo">¡¡ Si puedes imaginarlo, puedes programarlo !!</h1>
-            <p class="copy">¡¡Desarrolla tu propia web con nosotros!!.</p>
+        <!-- HEADER TIPO LANDING -->
+    <section id="Header">
+      <nav>
+        <div class="navbar">
+          <div class="logo"><a href="#">GroupPet <i class="fas fa-paw"></i></a></div>
+          <ul class="menu">
+            <li><a href="#Home" style="font-size:x-large;">Inicio</a></li>
+            <li><a href="#Acerca" style="font-size:x-large;">Adóptame</a></li>
+            <li><a href="#Portafolio" style="font-size:x-large;">Mascotas</a></li>
+            <li><a href="#Servicios" style="font-size:x-large;">Servicios</a></li>
+            <li><a href="#Contacto" style="font-size:x-large;">Contacto</a></li>
+          </ul>
         </div>
-
+      </nav>
+    </section>
     </header>
 
     <main>
-        
+        <!-- CAROUSEL PRINCIPAL -->
+    <section id="Home" class="contenedorPrincipal">
+      <div id="demo" class="carousel slide" data-bs-ride="carousel">
+        <!-- Indicators/dots -->
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+        </div>
+
+        <!-- The slideshow/carousel -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/slider.jpg" alt="Los Angeles" class="d-block" style="width:100%">
+            <div class="carousel-caption">
+              <h3>La mayoría de los perros, saben lo que son, no como los humanos</h3>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/slider1.jpg" alt="Chicago" class="d-block" style="width:100%">
+            <div class="carousel-caption">
+              <h3>Un perro es una sonrisa y una cola que se mueve alegremente... lo demás ¡No importa!</h3>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/slider2.jpg" alt="New York" class="d-block" style="width:100%">
+            <div class="carousel-caption">
+              <h3>Los perros aman a sus amigos y muerden a sus enemigos, casi al contrario de las personas, quienes
+                tienden a mezclar amor y odio.</h3>
+            </div>
+          </div>
+        </div>
+
+        <!-- Left and right controls/icons -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </section>
+
+    <!-- SECCIÓN PARA ADOPTAR MASCOTA -->
+    <section class="about-services" id="Acerca">
+      <h2 class="titulo"> ¡ Adopta una mascota !</h2>
+      <h6 class="subtitulo"> 3 Razones para adoptar un peludo</h6>
+      <br>
+      <div class="contenedor-sobre-nosotros">
+        <img src="img/adopta.jpg" alt="" class="imagen-about-us">
+        <div class="contenido-textos">
+          <h3><span>1</span>Razón más</h3>
+          <p>Son los mejores amigos del hombre y los más leales. Siempre te acompañarán y te esperarán en todos lados.
+          </p>
+          <h3><span>2</span>Razones más</h3>
+          <p>Te defenderán, cuidarán de ti y de tu hogar.</p>
+          <h3><span>3</span>Razones más</h3>
+          <p>Mejoran tu vida, te hacen feliz y tú los haces feliz al adoptarlo. El compañero ideal.</p>
+        </div>
+      </div>
+    </section>
     </main>
 
     <footer id="footer">
